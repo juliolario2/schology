@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-black bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/schology.png" alt="" width="30" height="24">
+    </a>
+    <a class="navbar-brand  active" arial-current="page" [routerLink]="['Carr']" >Schology</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['PanCur']" >Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" arial-current="page" [routerLink]="['Grup']" > Grupos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" arial-current="page" [routerLink]="['ActRec']" >Recursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" arial-current="page" [routerLink]="['Carr']" >Calificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['Datos']" >Datos Personales</a>
+          </li>
+        <li class="nav-item">
+         <a class="nav-link" aria-current="page" [routerLink]="['login']" >Login</a>
+        </li>
+        </ul>
+
+      <button (click)="muestra = !muestra" class="btn btn-outline-success" ><img src="./assets/Lupa.png" alt="" width="20" height="18"></button>
+      <form *ngIf="muestra">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success"  (click)="buscar(5)" >Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>

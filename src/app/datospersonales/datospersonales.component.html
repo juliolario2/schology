@@ -1,0 +1,12 @@
+<div *ngFor="let d of arreglodatos" class="card mb-3">
+  <div class="col">
+    <img src	="{{d.foto}}" class="card-img-top" alt="Persona1">
+    <h5 class="card-title">{{d.Nombre}}</h5>
+    <p class="card-text">{{d.Sueldo}}</p>
+    <p class="card-text">{{d.Telefono}}</p>
+    <p class="card-text">{{d.Titulo}}</p>
+    <div>
+      <button (click)="muestra(d.id)" [routerLink]="['/detalles', d.id]" type="button" class="btn btn-primary">Detalles</button>
+    </div>
+  </div>
+  </div>

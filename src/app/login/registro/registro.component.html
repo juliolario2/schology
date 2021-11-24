@@ -1,0 +1,53 @@
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">Nombre(s)</label>
+    <input type="text" class="form-control" id="validationTooltip01" value="Nombre(s)" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip02" class="form-label">Apellidos</label>
+    <input type="text" class="form-control" id="validationTooltip02" value="Paterno y Materno" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltipUsername" class="form-label">User name</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+      <input type="text" class="form-control" id="validationTooltipUsername" value="user@mail.com" aria-describedby="validationTooltipUsernamePrepend" required>
+      <div class="invalid-tooltip">
+        Please choose a unique and valid username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip03" class="form-label">Direccion</label>
+    <input type="text" class="form-control" id="validationTooltip03" required>
+    <div class="invalid-tooltip">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip04" class="form-label">Ciudad o Estado</label>
+    <select class="form-select" id="validationTooltip04" required>
+      <option selected disabled value="">Ciudad o Estado...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-tooltip">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Contraseña</label>
+    <input type="text" class="form-control" id="validationTooltip05" required>
+    <div class="invalid-tooltip">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Registrar</button>
+  </div>
+</form>
